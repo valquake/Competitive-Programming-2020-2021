@@ -1,6 +1,19 @@
 #include <iostream>
 #include <vector>
 
+/*
+	Author: Valeria Montagna
+	
+	Solution Description:
+	Keep a variable max, initialized with last element.
+	With reverse iterator, iterate over the vector and check if the current element
+	is the new leader. If it is, add to the vector and update current leader.
+	
+	At the end, read at reverse leades' vector to get the corrent result.
+	
+	Time complexity: O(n) for each test case, where n is the dimension of the vector.
+*/
+
 void print_leaders(std::vector<int> const& v){
 
 	std::vector<int> leaders;

@@ -1,6 +1,18 @@
 #include <iostream>
 #include <vector>
 
+/*
+	Author: Valeria Montagna
+	
+	Solution Description:
+	Knowing how to compute the sum of the first n natural numbers, compute it.
+	Iterate over the vector and compute the real sum.
+	
+	The solution is the difference between the presumptive sum and the real sum.
+	
+	Time complexity: O(n) for each test case, where n is dimension of the vector.
+*/
+
 void search_missing(int n, std::vector<int> const& v){
 
 	// I know how to compute the sum of the first n natural numbers

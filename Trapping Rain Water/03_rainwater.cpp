@@ -1,6 +1,22 @@
 #include <iostream>
 #include <vector>
 
+/*
+	Author: Valeria Montagna
+	
+	Solution Description:
+	
+	For each element i, I compute two vectors, in two separate loops:
+	- ML is the vector that keeps track of maximum between 0 and i-1 (predecessors)
+	- MS is the vector that keeps track of maximum between i+1 and n (successors)
+	These two vector are computed in a fashion way that reminds "Leaders" problem.
+	
+	Iterate for the third time the vector and for each element, final sum is updated
+	with the minimum between ML[i] and MS[i] minus the current element.
+	
+	Time complexity: O(n) for each test case, where n is vector's size.
+*/
+
 void compute_water(std::vector<int> const& v){
 
 	// Computation of the array of maximums between predecessors

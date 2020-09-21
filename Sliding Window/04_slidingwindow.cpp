@@ -2,6 +2,26 @@
 #include <vector>
 #include <deque>
 
+/*
+	Author: Valeria Montagna
+	
+	Solution Description:
+	
+	In this solution, I use a queue, that stores vector's positions under which
+	we can find the maximum for that window.
+	At each step i, the window of size k slides by 1 position and queue changes in the
+	following way:
+	- All positions in head that are less or equal to i-k are erased.
+	- All positions in tail associated to elements that are less or equal to current 
+	  element v[i] are erased.
+	- Current position i is pushed back.
+	- We add as maximum of current window the queue element in head.
+	
+	The final solution is obtained iterating over the vector of maxs.
+	
+	TIme complexity: O(n*log(k)), where n is vector's size and k is window's size.
+*/
+
 void compute_max(int k, std::vector<int> const& v){
 	std::deque<int> Q; // This queue stores positions
 	std::vector<int> maxs;

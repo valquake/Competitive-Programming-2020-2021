@@ -1,3 +1,16 @@
+/*
+	Author: Valeria Montagna
+	
+	Solution Description
+	In this solution, iterate over the vector from begin + 1 to end.
+	Keep a variable sum, at each step add the current element if sum is currently positive.
+	If not, restart the sum from current element.
+	
+	At each iteration, the solution is maximum value between sum and current max.
+	
+	Time complexity for each test case is O(n), where n is the size of vector.
+*/
+
 #include <iostream>
 #include <vector>
 
