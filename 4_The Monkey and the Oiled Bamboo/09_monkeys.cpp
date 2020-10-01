@@ -7,6 +7,7 @@
 
 
 	Time Complexity:
+	It is the same as Exponential Binary Search, i.e. O(Log n)
 
 */
 
