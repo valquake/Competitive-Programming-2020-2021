@@ -1,4 +1,4 @@
-#include "./Utility/FenwickTree.cpp"
+#include "./../Utility/FenwickTree.cpp"
 
 /*
 	Author: Valeria Montagna

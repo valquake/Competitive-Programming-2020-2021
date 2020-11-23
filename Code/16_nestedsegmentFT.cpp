@@ -20,7 +20,7 @@
 #include <tuple>
 #include <algorithm>
 
-#include "./Utility/FenwickTree.cpp"
+#include "./../Utility/FenwickTree.cpp"
 
 struct segment
 {
