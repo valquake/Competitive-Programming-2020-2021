@@ -8,9 +8,7 @@
 	following way:
 	- element i*k - 1 is deleted from BST
 	- element i*k + k is added to BST
-	- extract max from current BST
-	
-	The final solution is obtained iterating over the vector of maxs.
+	- print max from current BST
 	
 	Time Complexity:
 	At each step, we perform deletion, insertion and maximum operations, which cost Θ(logk). 
